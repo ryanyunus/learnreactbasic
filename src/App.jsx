@@ -4,13 +4,33 @@ class Button extends React.Component {
   render() {
     return (
       <button
-        className="h-10 px-6 font-semibold rounded-md bg-black text-white"
+        className="h-10 px-6 font-semibold rounded-md bg-red-700 text-white"
         type="submit"
       >
         Beli Sekarang
       </button>
     );
   }
+}
+function ButtonBlack() {
+  return (
+    <button
+      className="h-10 px-6 font-semibold rounded-md bg-black text-white"
+      type="submit"
+    >
+      Beli Sekarang
+    </button>
+  );
+}
+function ButtonPink() {
+  return (
+    <button
+      className="h-10 px-6 font-semibold rounded-md bg-pink-700 text-white"
+      type="submit"
+    >
+      Beli Sekarang
+    </button>
+  );
 }
 
 function App() {
@@ -19,9 +39,9 @@ function App() {
       <div>
         <Button></Button>
         <Button></Button>
+        <ButtonPink></ButtonPink>
         <Button></Button>
-        <Button></Button>
-        <Button></Button>
+        <ButtonBlack></ButtonBlack>
       </div>
     </div>
   );
